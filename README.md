@@ -58,7 +58,7 @@
 
 
  <script lang="ts">
- import { defineComponent, ref, provide } from 'vue'
+ import { defineComponent, ref, provide } from '@vue/composition-api'
  import Vue3CountdownClock from 'vue3-countdown-clock'
  
  export default defineComponent({
