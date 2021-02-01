@@ -1,11 +1,11 @@
 <snippet>
   <content>
   
-##  [Vue3-Countdown-Clock]() with Vue3.
+##  [Vue3-Countdown-Clock]() with Vue2.
 
 <p align="center">
     <a href="https://www.npmjs.com/package/vue-button-up">
-      <img alt="codebeat badge" src="https://img.shields.io/badge/version-1.0.5%20-44cc11.svg" />
+      <img alt="codebeat badge" src="https://img.shields.io/badge/version-0.1.4%20-44cc11.svg" />
     </a>
     <a href="https://www.npmjs.com/package/tiptap-vuetify">
       <img alt="codebeat badge" src="https://img.shields.io/badge/license-ISC%20-44cc11.svg" />
@@ -14,12 +14,13 @@
       <img alt="codebeat badge" src="https://badgen.net/badge/code%20style/standard/f2a" />
     </a>
     <a href="https://www.npmjs.com/package/tiptap-vuetify">
-      <img alt="codebeat badge" src="https://img.shields.io/badge/size-15%20kB-44cc11.svg" />
+      <img alt="codebeat badge" src="https://img.shields.io/badge/size-90%20kB-44cc11.svg" />
     </a>
   </p>
   
-  Button with the functionality of scrolling the page up for Vue.
-  [DEMO on codesanbox]()
+  
+  Working example https://clockcountdown.web.app/
+  
   
   ## Navigation  
   <!-- TOC -->
@@ -31,7 +32,7 @@
   
   ## Features
   
-  - used vue3
+  - used vue2
   - easy to install
   - Easy application
   - Using provide, inject, ref
@@ -40,11 +41,21 @@
   - Ability to customize your own language
   - Ability to customize the end time
   - Completion message
-  - TS
  
   
   ## Installation
-  
+  ```
+npm install @vue/composition-api
+# or
+yarn add @vue/composition-api
+```
+You must install @vue/composition-api as a plugin via Vue.use() before you can use the Composition API to compose your component.
+  ```$xslt
+импортировать  Vue  из  'vue' 
+импортировать  VueCompositionAPI  из  '@ vue / композиция-api'
+
+Vue . использовать ( VueCompositionAPI )
+```
     ```
      npm install --save vue3-countdown-clock
     ```
@@ -57,7 +68,7 @@
 <template/>
 
 
- <script lang="ts">
+ <script>
  import { defineComponent, ref, provide } from '@vue/composition-api'
  import Vue3CountdownClock from 'vue3-countdown-clock'
  
@@ -182,12 +193,15 @@ const titleDays = ref('Days')
      provide('titleDays', titleDays)
 ```
 ...
-
+"clock-countdown" with Vue3
+https://www.npmjs.com/package/vue3-clock-countdown
 
 
 
 
 #Donate (creating code at your request out of turn)
+I would be very grateful for the star on github.com)))
+
 💰 I can do some feature for you out of turn and at a fast pace or solve your problem, give a quick answers. To do this, you can pay me one-time or make a subscription. We can discuss the details by email, it is written in my profile.
 ></content>
 ><tabTrigger>readme</tabTrigger>
